@@ -1,18 +1,8 @@
-//arduino sample program
-import processing.serial.*;
-import cc.arduino.*;
-Arduino arduino;
-
 public void setup() {
   size(400, 400);
-  arduino = new Arduino(this, Arduino.list()[1], 57600); //change the [0] to a [1] or [2] etc. if your program doesn't work
-}
+}  
 
 public void draw() {
-  background(192);
-  int y = arduino.analogRead(5);
-  System.out.println(y);
-  
    //background sky & grass
    background(153, 204, 255);
    fill(102, 255, 102);
@@ -235,8 +225,4 @@ public void draw() {
    curve(217, 282, 202, 281, 208, 302, 220, 284);
    curve(208, 283, 208, 302, 216, 302, 212, 283);
    line(220, 280, 202, 280);
-
 }
-
-
-
