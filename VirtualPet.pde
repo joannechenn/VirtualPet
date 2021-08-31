@@ -47,20 +47,6 @@ public void draw() {
    fill(255, 255, 255);
    ellipse(47, 226, 3.25, 3.25);
    
-   //back right leg
-   fill(0, 178, 177, 255);
-   stroke(0, 178, 177, 255);
-   beginShape();
-   vertex(202, 280);
-   vertex(220, 280);
-   vertex(216, 302);
-   vertex(208, 302);
-   endShape(CLOSE);
-   stroke(1, 0, 0, 255);
-   line(220, 280, 216, 302); 
-   curve(217, 282, 202, 281, 208, 302, 220, 284);
-   curve(208, 283, 208, 302, 216, 302, 212, 283);
-   
    //front right leg
    stroke(0, 178, 177, 255);
    fill(0, 178, 177, 255);
@@ -94,6 +80,33 @@ public void draw() {
    ellipse(112, 230, 19, 14);
    fill(255, 255, 255);
    ellipse(116, 230, 4, 4);
+   
+   //back left foot/flipper
+   strokeWeight(1.25);
+   stroke(252, 177, 52, 255);
+   fill(252, 177, 52, 255);
+   beginShape();
+   vertex(268, 309);
+   vertex(274, 317);
+   vertex(250, 325);
+   endShape(CLOSE);
+   beginShape();
+   vertex(268, 309);
+   vertex(250, 325);
+   vertex(245, 319);
+   endShape(CLOSE);
+   beginShape();
+   vertex(268, 309);
+   vertex(245, 319);
+   vertex(247, 314);
+   endShape(CLOSE);
+   stroke(224, 121, 30, 255);
+   strokeWeight(1);
+   curve(248, 326, 268, 309, 274, 317, 248, 323);
+   curve(255, 302, 274, 317, 250, 325, 266, 299);
+   curve(272, 308, 245, 319, 249, 323, 272, 310);
+   curve(276, 317, 245, 319, 247, 314, 276, 316);
+   curve(250, 318, 247, 314, 256, 311, 253, 318);
    
    //back left leg
    fill(0, 178, 177, 255);
@@ -179,13 +192,49 @@ public void draw() {
    curve(15, 200, 86, 206, 55, 170, 15, 198);
    curve(25, 210, 86, 206, 54, 186, 25, 210);
    
-   //back left foot/flipper
-   //color to fill (252, 177, 52, 255)
+   //back right foot/flipper
+   strokeWeight(1.25);
+   stroke(252, 177, 52, 255);
+   fill(252, 177, 52, 255);
+   translate(-51, -12);
+   beginShape();
+   vertex(268, 309);
+   vertex(274, 317);
+   vertex(250, 325);
+   endShape(CLOSE);
+   beginShape();
+   vertex(268, 309);
+   vertex(250, 325);
+   vertex(245, 319);
+   endShape(CLOSE);
+   beginShape();
+   vertex(268, 309);
+   vertex(245, 319);
+   vertex(247, 314);
+   endShape(CLOSE);
    stroke(224, 121, 30, 255);
-   curve(248, 326, 268, 307, 274, 317, 248, 323);
-   curve(255, 302, 274, 317, 249, 325, 266, 299);
-   curve(235, 332, 245, 319, 248, 326, 236, 333);
-   
+   strokeWeight(1);
+   curve(248, 326, 268, 309, 274, 317, 248, 323);
+   curve(255, 302, 274, 317, 250, 325, 266, 299);
+   curve(272, 308, 245, 319, 249, 323, 272, 310);
+   curve(276, 317, 245, 319, 247, 314, 276, 316);
+   curve(250, 318, 247, 314, 256, 311, 253, 318);
+     
+   //back right leg
+   translate(51, 12);
+   fill(0, 178, 177, 255);
+   stroke(0, 178, 177, 255);
+   beginShape();
+   vertex(202, 280);
+   vertex(220, 280);
+   vertex(216, 302);
+   vertex(208, 302);
+   endShape(CLOSE);
+   stroke(1, 0, 0, 255);
+   line(220, 281, 216, 302); 
+   curve(217, 282, 202, 281, 208, 302, 220, 284);
+   curve(208, 283, 208, 302, 216, 302, 212, 283);
+   line(220, 280, 202, 280);
 
 }
 
